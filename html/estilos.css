@@ -70,6 +70,7 @@
         width: 99%;
     }
 
+    
     a:hover {
         color: red;
     }
@@ -85,8 +86,24 @@
         width: 15%;
         margin: 20px;
         padding: 20px;
-        background-color: khaki;
+        background-image: linear-gradient(black, yellow, black);
         border-radius: 25px;
+    }
+
+    .animacion {
+        animation-name: titulo;
+        animation-iteration-count: 1;
+        animation-duration: 5s;
+        animation-timing-function: ease-in-out;
+    }
+
+    @keyframes titulo {
+        0% {opacity: 0;
+        }
+        50% {opacity: 1;
+            transform: skewX(30dex);
+        }
+        100% {}
     }
 
     .searchButton {
