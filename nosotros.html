@@ -5,27 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NOSOTROS Erbeli Laboratorios Industriales SACIFIM</title>
+    <title>Erbeli Laboratorios Industriales SACIFIM</title>
     <link rel="stylesheet" href="estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap local/css/bootstrap.css">
+    <link rel="stylesheet" href="estilos.css">
 </head>
 
-<body id="nosotrosGrid">
+<body>
 
-    <header class="headerFlex">
-        <section class="menuTitle">
-            <h1>ERBELI</h1>
-        </section>
-        <section>
-            <form class="searchButton">
-                <input type="search" placeholder="Buscar...">
-                <button>Buscar</button>
-            </form>
-        </section>
+    <header class="container-fluid">
+        <div class="row">
+            <section class="col">
+                <h1>ERBELI</h1>
+            </section>
+            <section class="col text-end">
+                <form>
+                    <input type="search" placeholder="Buscar...">
+                    <button>Buscar</button>
+                </form>
+            </section>
+        </div>
     </header>
-    <nav class="flexMenu">
+    <nav class="navbar">
         <li><a href="index.html">Inicio</a></li>
         <li><a href="productos.html">Productos</a></li>
         <li><a href="nosotros.html">Nosotros</a></li>
@@ -33,20 +36,20 @@
         <li><a href="contacto.html">Contacto</a></li>
         <li><a href="#abajo">Ir abajo</a></li>
     </nav>
-    <main>
-        <div class="intro introText">
+    <main class="container-fluid">
+        <div class="col text-center">
             <p>Erbeli es una empresa familiar con mas de 60 años en el negocio.
                 Calidad y confiabilidad son nuestros principales valores, los cuales han guiado a nuestra empresa
                 durante todo este tiempo.
             </p>
         </div>
-        <div class="usVideo bodyVideo">
+        <div class="col text-center">
             <iframe width="800" height="400" src="https://www.youtube.com/embed/2YBtspm8j8M"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>
-        <div class="historia historiaText">
+        <div class="col text-center">
             <p>Erbeli Laboratorios Industriales SACIFIM es una empresa fundada por Ernesto Bernardo Lijo y manejada por
                 su hija, Silvia Sara Lijo.
                 Fundada en 19xx, Erbeli empezo su funcionamiento como una empresa de venta de lubricantes local, pero
@@ -54,13 +57,13 @@
             </p>
         </div>
     </main>
-    <footer class="border">
+    <footer>
         <a href="#arriba">Ir arriba</a>
-        <section class="footerText">
+        <section>
             <CUIT:>Erbeli Laboratorios Industriales SACIFIM CUIT: 33538235119 </p>
         </section>
     </footer>
-
+    <script src="bootstrap local/js/bootstrap.js"></script>
 </body>
 
 </html>
