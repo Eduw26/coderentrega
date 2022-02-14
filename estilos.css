@@ -327,6 +327,13 @@
         border-right: 1px solid #333;
     }
 
+    nav li a {
+        margin: 1%;
+        padding: 1%;
+        text-decoration: none;
+        text-size-adjust: 90%;
+    }
+
     .menuTitle {
         font-family: 'Times New Roman', Times, serif;
         font-size: 40px;
@@ -462,7 +469,7 @@
             "footer"
         ;
         grid-template-columns: 100%;
-        grid-template-rows: 5% 5vh 1fr 1fr 1fr 5%;
+        grid-template-rows: 5% 5% 1fr 1fr 1fr 5%;
         grid-column-gap: 10px;
         grid-row-gap: 10px;
     }
@@ -501,7 +508,7 @@
             "footer"
         ;
         grid-template-columns: 100%;
-        grid-template-rows: 5% 5vh 1fr 1fr 5%;
+        grid-template-rows: 5% 5% 1fr 1fr 5%;
         grid-column-gap: 10px;
         grid-row-gap: 10px;
     }
