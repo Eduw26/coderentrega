@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Erbeli Laboratorios Industriales SACIFIM</title>
-        <link rel="stylesheet" href="estilos.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erbeli Laboratorios Industriales SACIFIM</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
 
 <body id="carritoGrid">
 
@@ -27,26 +27,48 @@
         </section>
     </header>
     <nav class="flexMenu">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="productos.html">Productos</a></li>
-        <li><a href="nosotros.html">Nosotros</a></li>
-        <li><a href="carrito.html">Carrito</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-        <li><a href="#abajo">Ir abajo</a></li>
+        <li class="menuStyle"><a href="index.html">INICIO</a></li>
+        <li class="menuStyle"><a href="productos.html">PRODUCTOS</a></li>
+        <li class="menuStyle"><a href="nosotros.html">NOSOTROS</a></li>
+        <li class="menuStyle"><a href="carrito.html">CARRITO</a></li>
+        <li class="menuStyle"><a href="contacto.html">CONTACTO</a></li>
+        <li class="menuStyle"><a href="#abajo">ABAJO</a></li>
     </nav>
     </header>
     <div class="inventario">
-        <section>
-            <img src="http://placekitten.com/100/100" alt="podriapareceruntambor">
-            Tambor de grasa Infusble
-        </section>
-        <section>
-            <img src="http://placekitten.com/100/100" alt="podriapareceruntambor">
-            Tambor de aceite Hidraulico
-        </section>
+        <section class="carritoItem">
+            <img src="assets\Img\Barrel.jpg" style="height: 200px;" width="200px" alt="Barril">
+            <p>Tambor de aceite de alta Calidad
+                STOCK 1 UNIDAD
+                PRECIO: $15000
+            </p>
+            <section class="carritoItem">
+                <img src="assets\Img\Barrel.jpg" style="height: 200px;" width="200px" alt="Barril">
+                <p>Tambor de aceite de alta Calidad
+                    STOCK 1 UNIDAD
+                    PRECIO: $15000
+                </p>
+            </section>
     </div>
-    <div class="checkout">
+    <div class="checkout Mfix">
         <h1>Checkout</h1>
+        <section class="border box">
+            <p>Cuenta desglosando precios
+            </p>
+            <p>Cuenta con precio final
+            </p>
+            <p>IVA
+            </p>
+        </section>
+        <section class="box">
+            <select class="fPagos" name="pago" id="pago">
+                <option value="elija">Formas de Pago</option>
+                <option value="transferencia">Transferencia</option>
+                <option value="tarjeta">Tarjeta</option>
+                <option value="efectivo">Efectivo</option>
+                <option value="otro">Otro</option>
+            </select>
+        </section>
         <button class="botones" type="button">Comprar</button>
     </div>
     <footer class="border">

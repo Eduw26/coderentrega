@@ -1,17 +1,16 @@
-/* Grid Index */
-
+/* PC */
 @media only screen and (min-width: 1024px) {
     #indexGrid {
         display: grid;
         grid-template-areas:
             "header header header"
-            "nav nav mapa"
+            "nav nav nav"
             "video video mapa"
             "productos productos mapa"
             "footer footer footer"
         ;
         grid-template-columns: auto auto 15%;
-        grid-template-rows: 5% 5vh 2fr 2fr 5%;
+        grid-template-rows: 5% 5% 2fr 2fr 5%;
         grid-column-gap: 10px;
         grid-row-gap: 10px;
 
@@ -48,7 +47,7 @@
     nav {
         grid-area: nav;
         padding: 3%;
-        margin: 3%;
+        margin: 5%;
     }
 
     aside {
@@ -64,13 +63,12 @@
         border: black;
         border-style: inset;
         background-color: rgb(235, 243, 213);
-        margin: 5px;
-        padding: 5px;
+        margin: 0.5%;
+        padding: 0.5%;
         list-style-type: none;
-        width: 99%;
+        width: 98%;
     }
 
-    
     a:hover {
         color: red;
     }
@@ -98,11 +96,15 @@
     }
 
     @keyframes titulo {
-        0% {opacity: 0;
+        0% {
+            opacity: 0;
         }
-        50% {opacity: 1;
+
+        50% {
+            opacity: 1;
             transform: skewX(30dex);
         }
+
         100% {}
     }
 
@@ -122,6 +124,11 @@
         align-items: center;
     }
 
+    .carritoItem {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
 
     .bodyVideo {
         display: flex;
@@ -148,12 +155,22 @@
             "footer footer footer"
         ;
         grid-template-columns: 10% auto 15%;
-        grid-template-rows: 5% 5vh auto 5%;
+        grid-template-rows: 5% 5% auto 5%;
         grid-column-gap: 1%;
         grid-row-gap: 1%;
 
     }
 
+    .box {
+        height: 20vh;
+        width: 250px;
+    }
+
+    .fPagos {
+        padding: 5px;
+        margin: 5px;
+        
+    }
 
     .cat {
         grid-area: cat;
@@ -195,7 +212,7 @@
             "footer"
         ;
         grid-template-columns: 100%;
-        grid-template-rows: 5% 5vh 1fr auto 1fr 5%;
+        grid-template-rows: 5% 5% 1fr auto 1fr 5%;
         grid-column-gap: 1%;
         grid-row-gap: 1%;
     }
@@ -238,7 +255,7 @@
             "footer footer"
         ;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 5% 5vh 1fr 1fr 5%;
+        grid-template-rows: 5% 5% 1fr 1fr 5%;
         grid-column-gap: 20px;
         grid-row-gap: 20px;
     }
@@ -269,6 +286,14 @@
     .form {
         display: flex;
         flex-direction: column;
+        border: 2px solid black;
+        border-radius: 4px;
+        ;
+    }
+
+    .infoStyle {
+        margin: 3%;
+        padding: 3%;
     }
 
     #carritoGrid {
@@ -280,7 +305,7 @@
             "footer footer"
         ;
         grid-template-columns: auto 15%;
-        grid-template-rows: 5% 5vh 1fr 5%;
+        grid-template-rows: 5% 5% 1fr 5%;
         grid-column-gap: 10px;
         grid-row-gap: 10px;
     }
@@ -318,20 +343,288 @@
     }
 
     .flexMenu {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .menuStyle {
+        background-color: rgb(235, 243, 213);
+        font-family: 'Times New Roman', Times, serif;
+        padding: 0.5% 42%;
+        margin: 0.5%;
+        border: white;
+        border-radius: 1%;
+        border-style: solid;
+        font-size: 20px;
+    }
+
+    a:hover {
+        color: red;
+    }
+
+
+    .menuTitle {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 40px;
+        background-color: khaki;
+        text-align: center;
+    }
+
+    .searchButton input {
+        height: 2%;
+        width: 40vh;
+    }
+
+    .searchButton {
+        padding: 5px;
+        margin: 3%;
+        align-self: center;
+    }
+
+    .bodyVideo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .bodyImg {
+        margin: 1vh;
+        width: 100%;
+    }
+
+    .map {
+        width: 100%;
+    }
+
+
+    .botones {
+        background-color: rgb(235, 243, 213);
+        margin: 3%;
+        padding: 3%;
+        text-decoration: none;
+        font-size: 16px;
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    .prod {
+        grid-area: prod;
+        padding: 3%;
+        margin: 3%;
+    }
+
+    #productGrid {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "nav"
+            "cat"
+            "prod"
+            "footer"
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: 5% 5% auto auto 2%;
+        grid-column-gap: 1%;
+        grid-row-gap: 1%;
+
+    }
+
+    .cat {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-area: cat;
+        padding: 2%;
+        margin: 2%;
+        width: 100%;
+        justify-self: center;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+        margin: 5%;
+        height: 50%;
+    }
+
+
+    .fPagos {
+        margin: 3%;
+        padding: 3%;
+        text-align: center;
+
+    }
+
+    .mFix {
+        align-items: center;
+    }
+
+    .prod {
+        grid-area: prod;
+    }
+
+    #nosotrosGrid {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "nav"
+            "intro"
+            "usVideo"
+            "historia"
+            "footer"
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: 5% 5% 1fr auto 1fr 2%;
+        grid-column-gap: 1%;
+        grid-row-gap: 1%;
+    }
+
+    .intro {
+        grid-area: intro;
+    }
+
+    .usVideo {
+        grid-area: video;
+        display: flex;
+        justify-content: center;
+    }
+
+    .historia {
+        grid-area: historia;
+    }
+
+    .introText {
+        text-align: center;
+        padding: 5%;
+        margin: 3%;
+        background-color: whitesmoke;
+    }
+
+    .historiaText {
+        text-align: center;
+        padding: 5%;
+        border: 3%;
+        background-color: whitesmoke;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid black;
+        border-radius: 4px;
+    }
+
+    .infoStyle {
+        margin: 3%;
+        padding: 3%;
+    }
+
+    #contactoGrid {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "nav"
+            "conMap"
+            "conForm"
+            "conInfo"
+            "footer"
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: 5% 5% 1fr 1fr 1fr 5%;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+
+    .conForm {
+        grid-area: conForm;
+    }
+
+    .conMap {
+        grid-area: conMap;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .conInfo {
+        grid-area: conInfo;
+        padding: 3%;
+        margin: 3%;
+
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        padding: 3%;
+    }
+
+    #carritoGrid {
+        display: grid;
+        grid-template-areas:
+            "header "
+            "nav "
+            "inventario"
+            "checkout"
+            "footer"
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: 5% 5% 1fr 1fr 5%;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+
+    .inventario {
+        grid-area: inventario;
+
+    }
+
+    .checkout {
+        grid-area: checkout;
+        width: 35%;
+        justify-self: center;
+        padding: 3%;
+        margin: 3%;
+    }
+
+    .bytalign {
+        text-align: center;
+    }
+
+    .cvButton {
+        position: relative;
+        right: 3%;
+    }
+
+
+}
+
+/* Tablet */
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+    #indexGrid {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "nav"
+            "video"
+            "productos"
+            "mapa"
+            "footer"
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: 5% 5% 1fr auto 1fr 2%;
+    }
+
+    .flexMenu {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
         padding: 2%;
         margin: 2%;
-        border-left: 1px solid #fff;
-        border-right: 1px solid #333;
-    }
-
-    nav li a {
-        margin: 1%;
-        padding: 1%;
-        text-decoration: none;
-        text-size-adjust: 90%;
+        border: 1px solid #333;
+        background-color: rgb(235, 243, 213);
     }
 
     .menuTitle {
@@ -367,6 +660,25 @@
         width: 100%;
     }
 
+    .box {
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+        margin: 5%;
+        height: 50%;
+    }
+
+
+    .fPagos {
+        margin: 3%;
+        padding: 3%;
+        text-align: center;
+
+    }
+
+    .mFix {
+        align-items: center;
+    }
 
     .botones {
         background-color: rgb(235, 243, 213);
@@ -495,7 +807,18 @@
     .form {
         display: flex;
         flex-direction: column;
+        border: 2px solid black;
+        border-radius: 4px;
         padding: 3%;
+        margin: 3%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .infoStyle {
+        margin: 3%;
+        padding: 3%;
+        align-items: center;
     }
 
     #carritoGrid {
@@ -509,236 +832,6 @@
         ;
         grid-template-columns: 100%;
         grid-template-rows: 5% 5% 1fr 1fr 5%;
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
-    }
-
-    .inventario {
-        grid-area: inventario;
-
-    }
-
-    .checkout {
-        grid-area: checkout;
-        width: 35%;
-        justify-self: center;
-        padding: 3%;
-        margin: 3%;
-    }
-
-    .bytalign {
-        text-align: center;
-    }
-
-    .cvButton {
-        position: relative;
-        right: 3%;
-    }
-
-
-}
-
-/* Tablet */
-@media only screen and (min-width: 481px) and (max-width: 1023px)  {
-    #indexGrid {
-        display: grid;
-        grid-template-areas:
-            "header"
-            "nav"
-            "video"
-            "productos"
-            "mapa"
-            "footer"
-        ;
-        grid-template-columns: 100%;
-        grid-template-rows: 5% 5% 1fr auto 1fr 2%;
-    }
-
-    .flexMenu {
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        padding: 2%;
-        margin: 2%;
-        border-left: 1px solid #fff;
-        border-right: 1px solid #333;
-    }
-
-    .menuTitle {
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 40px;
-        background-color: khaki;
-        text-align: center;
-    }
-
-    .searchButton input {
-        height: 2%;
-        width: 40vh;
-    }
-
-    .searchButton {
-        padding: 5px;
-        margin: 3%;
-        align-self: center;
-    }
-
-    .bodyVideo {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .bodyImg {
-        margin: 1vh;
-        width: 100%;
-    }
-
-    .map {
-        width: 100%;
-    }
-
-
-    .botones {
-        background-color: rgb(235, 243, 213);
-        margin: 3%;
-        padding: 3%;
-        text-decoration: none;
-        font-size: 16px;
-        border-radius: 5px;
-        width: 100%;
-    }
-
-    .prod {
-        grid-area: prod;
-        padding: 3%;
-        margin: 3%;
-    }
-
-    #productGrid {
-        display: grid;
-        grid-template-areas:
-            "header"
-            "nav"
-            "cat"
-            "prod"
-            "footer"
-        ;
-        grid-template-columns: 100%;
-        grid-template-rows: 5% 5% auto auto 2%;
-        grid-column-gap: 1%;
-        grid-row-gap: 1%;
-
-    }
-
-    .cat {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        grid-area: cat;
-        padding: 2%;
-        margin: 2%;
-        width: 100%;
-    }
-
-    .prod {
-        grid-area: prod;
-    }
-
-    #nosotrosGrid {
-        display: grid;
-        grid-template-areas:
-            "header"
-            "nav"
-            "intro"
-            "usVideo"
-            "historia"
-            "footer"
-        ;
-        grid-template-columns: 100%;
-        grid-template-rows: 5% 5% 1fr auto 1fr 2%;
-        grid-column-gap: 1%;
-        grid-row-gap: 1%;
-    }
-
-    .intro {
-        grid-area: intro;
-    }
-
-    .usVideo {
-        grid-area: video;
-        display: flex;
-        justify-content: center;
-    }
-
-    .historia {
-        grid-area: historia;
-    }
-
-    .introText {
-        text-align: center;
-        padding: 5%;
-        margin: 3%;
-        background-color: whitesmoke;
-    }
-
-    .historiaText {
-        text-align: center;
-        padding: 5%;
-        border: 3%;
-        background-color: whitesmoke;
-    }
-
-    #contactoGrid {
-        display: grid;
-        grid-template-areas:
-            "header"
-            "nav"
-            "conMap"
-            "conForm"
-            "conInfo"
-            "footer"
-        ;
-        grid-template-columns: 100%;
-        grid-template-rows: 5% 5vh 1fr 1fr 1fr 5%;
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
-    }
-
-    .conForm {
-        grid-area: conForm;
-    }
-
-    .conMap {
-        grid-area: conMap;
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .conInfo {
-        grid-area: conInfo;
-        padding: 3%;
-        margin: 3%;
-
-    }
-
-    .form {
-        display: flex;
-        flex-direction: column;
-        padding: 3%;
-    }
-
-    #carritoGrid {
-        display: grid;
-        grid-template-areas:
-            "header "
-            "nav "
-            "inventario"
-            "checkout"
-            "footer"
-        ;
-        grid-template-columns: 100%;
-        grid-template-rows: 5% 5vh 1fr 1fr 5%;
         grid-column-gap: 10px;
         grid-row-gap: 10px;
     }
@@ -768,12 +861,10 @@
 
 }
 
+/* Generales */
 .flexMenu {
     display: flex;
     flex-wrap: nowrap;
-    border: black;
-    border-style: inset;
-    background-color: rgb(235, 243, 213);
     list-style-type: none;
 }
 
